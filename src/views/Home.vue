@@ -21,8 +21,16 @@
           <button>注册</button>
         </div>
       </div>
-      
     </nav>
+    <div class="container-4">
+      <img src="../assets/image.png" alt="image" class="image">
+      <div class="container-1">
+        <div class="luna">LUNA</div>
+        <div class="education">智慧教育知识图谱</div>
+    </div>
+  </div>
+
+    <search-bar></search-bar>
 
     <!-- 内容块 -->
     <section class="h-screen flex items-center justify-center">
@@ -81,6 +89,7 @@ export default {
   padding: 14px 55px;
   gap: 566px;
   transition: background-color 300ms, backdrop-filter 300ms; /* 添加过渡效果 */
+  z-index: 2;
 }
 
 .navbar-scrolled { /* 定义滚动后的样式 */
@@ -120,22 +129,22 @@ export default {
 }
 
 .line{
-/* 直线 1 */
+  /* 直线 1 */
 
-/* 自动布局子元素 */
-position: static;
-left: 327px;
-top: 13.5px;
-width: 18px;
-height: 0px;
-transform: rotate(90deg);
-opacity: 1;
+  /* 自动布局子元素 */
+  position: static;
+  left: 327px;
+  top: 13.5px;
+  width: 18px;
+  height: 0px;
+  transform: rotate(90deg);
+  opacity: 1;
 
-border: 2px solid rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.5);
 
-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.16);
 
-z-index: 4;
+  z-index: 4;
 }
 
 .container-3 button {
@@ -150,9 +159,78 @@ z-index: 4;
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 100vw;
+  width: 1440px;
   height: 620px;
   opacity: 1;
   background: linear-gradient(247deg, #ABC5F3 0%, #C2DEF4 55%, #D5F2F4 100%);
 }
+
+.container-4 {
+  position: absolute;
+  left: 549.5px;
+  top: 290px;
+  width: 341px;
+  height: 128px;
+  opacity: 1;
+}
+
+.image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 128px;
+  height: 128px;
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+.container-1 {
+  position: absolute;
+  left: 140px;
+  top: 10px;
+  width: 201px;
+  height: 108px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+  padding: 0;
+  gap: 8px;
+}
+
+.luna {
+  position: static;
+  left: 19.5px;
+  top: 0;
+  width: 162px;
+  height: 56px;
+  opacity: 1;
+  font-family: 思源黑体;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: 0.24em;
+  color: #222222;
+  z-index: 0;
+}
+
+.education {
+  position: static;
+  left: 0;
+  top: 64px;
+  width: 201px;
+  height: 44px;
+  opacity: 1;
+  font-family: 思源黑体;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #555555;
+  z-index: 1;
+}
+
 </style>
