@@ -40,6 +40,8 @@
   </script>
   
   <style scoped>
+
+  
   .search-bar {
     position: absolute;
     left: 400px;
@@ -56,6 +58,7 @@
     background: #FFFFFF;
     box-shadow: 0px 6px 32px 0px rgba(0, 0, 0, 0.12);
     align-items: center;
+    z-index: 2;
 }
 
 .container-12 {
