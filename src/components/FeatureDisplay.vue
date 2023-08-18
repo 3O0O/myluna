@@ -47,10 +47,10 @@ export default {
 <style scoped>
 /* 功能展示部分 */
 .feature-display {
-  position: absolute;
+  position: relative;
   left: 0px;
-  top: 3252px;
-  width: 1440px;
+  top: 1182px;
+  width: 100%;
   height: 1000px;
   opacity: 1;
   display: flex;

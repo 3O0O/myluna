@@ -53,10 +53,9 @@ export default {
 <style scoped>
 /* 知识呈现部分 */
 .knowledge-presentation {
-  position: absolute;
-  left: 0px;
-  top: 2252px;
-  width: 1440px;
+  position: relative;
+  width: 100%;
+  top: 1182px;
   height: 1000px;
   opacity: 1;
   display: flex;

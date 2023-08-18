@@ -2,9 +2,9 @@
   <div class="massive-rescources">
     <!-- 容器23 -->
     <div class="container-23">
-      <button class="text-btn">试题资源</button>
-      <button class="text-btn">试卷资源</button>
-      <button class="text-btn">教材教辅</button>
+      <button class="text-btn hover:underline border-none">试题资源</button>
+      <button class="text-btn hover:underline border-none">试卷资源</button>
+      <button class="text-btn hover:underline border-none">教材教辅</button>
     </div>
 
     <!-- 容器16 -->
@@ -14,9 +14,9 @@
         <!-- 容器32 -->
         <div class="container-32 flex items-center">
           <span class="resources-title-1">各学科数据统计</span>
-          <div class="container-31">
-            <button class="btn">显示学段细分</button>
-          </div>
+          <button class="container-31 border-none">
+            <span class="btn">显示学段细分</span>
+          </button>
         </div>
         <img src="../assets/chart.png" alt="图表" class="chart">
       </div>
@@ -32,17 +32,17 @@
         </div>
         <!-- 容器30 -->
         <div class="container-30 flex">
-          <button class="container-27 flex items-center">
+          <button class="container-27 flex items-center border-none">
             <img src="../assets/type.png" alt="logo" class="logo1">
-            <div class="btn-text">试题录入</div>
+            <div class="btn-text text-white">试题录入</div>
           </button>
-          <button class="container-28 flex items-center">
+          <button class="container-28 flex items-center border-none">
             <img src="../assets/search.png" alt="logo" class="logo2">
-            <div class="btn-text">试题检索</div>
+            <div class="btn-text text-white">试题检索</div>
           </button>
-          <button class="container-29 flex items-center">
+          <button class="container-29 flex items-center border-none">
             <img src="../assets/book-open.png" alt="logo" class="logo3">
-            <div class="btn-text">智能分析</div>
+            <div class="btn-text text-white">智能分析</div>
           </button>
         </div>
       </div>
@@ -59,16 +59,12 @@ export default {
 <style scoped>
 /* 海量资源部分 */
 .massive-rescources {
-  /* 海量资源 */
-
-  position: absolute;
-  left: 0px;
-  top: 1252px;
-  width: 1440px;
+  position: relative;
+  top: 1182px;
+  width: 100%;
   height: 1000px;
   opacity: 1;
-    
-  /* 自动布局 */
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,11 +72,9 @@ export default {
   gap: 32px;
     
   background: #FAFAFC;
+  z-index: 0;
 }
 .container-23 {
-  /* 容器 23 */
-
-  /* 自动布局子元素 */
   position: static;
   left: 80px;
   top: 200px;
@@ -88,12 +82,12 @@ export default {
   height: 48px;
   opacity: 1;
       
-  /* 自动布局 */
   display: flex;
   flex-direction: row;
   padding: 8px;
   gap: 40px;
-      
+  
+  border: none;
   z-index: 0;
 }
 .text-btn {
@@ -115,6 +109,9 @@ export default {
   white-space: nowrap;
     
   z-index: 2;
+}
+.text-btn:focus {
+  outline: none; /* 移除获得焦点时的默认外边框 */
 }
 .container-16 {
   position: static;
@@ -215,6 +212,13 @@ export default {
   background: #F7F7F7;
     
   z-index: 1;
+  transition: transform 0.3s ease;
+}
+.container-31:hover {
+  transform: scale(0.95); /* 缩小到95%的原始大小 */
+}
+.container-31:focus {
+  outline: none; /* 移除获得焦点时的默认外边框 */
 }
 .resources-title-1 {
   position: static;
@@ -235,9 +239,6 @@ export default {
   z-index: 0;
 }
 .btn {
-  /* 显示学段细分 */
-
-  /* 自动布局子元素 */
   position: static;
   left: 12px;
   top: 6px;
@@ -424,6 +425,13 @@ export default {
   background: linear-gradient(270deg, #D46A6A 0%, #D45959 100%);
     
   z-index: 0;
+  transition: transform 0.3s ease;
+}
+.container-27:hover {
+  transform: scale(0.95); /* 缩小到95%的原始大小 */
+}
+.container-27:focus {
+  outline: none; /* 移除获得焦点时的默认外边框 */
 }
 .container-28 {
   /* 容器 28 */
@@ -449,6 +457,13 @@ export default {
   background: linear-gradient(270deg, #6A91D4 0%, #5986D4 100%);
     
   z-index: 1;
+  transition: transform 0.3s ease;
+}
+.container-28:hover {
+  transform: scale(0.95); /* 缩小到95%的原始大小 */
+}
+.container-28:focus {
+  outline: none; /* 移除获得焦点时的默认外边框 */
 }
 .container-29 {
   /* 容器 29 */
@@ -474,6 +489,13 @@ export default {
   background: linear-gradient(270deg, #766AD4 0%, #6759D4 100%);
     
   z-index: 2;
+  transition: transform 0.3s ease;
+}
+.container-29:hover {
+  transform: scale(0.95); /* 缩小到95%的原始大小 */
+}
+.container-29:focus {
+  outline: none; /* 移除获得焦点时的默认外边框 */
 }
 .logo{
   position: static;
