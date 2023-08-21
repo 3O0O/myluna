@@ -34,13 +34,13 @@
         智慧教育知识图谱（LUNA）致力于为广大师生提供深层次、多维度的海量教育资源处理分析工具，与智能、个性化的教育资源组织、分析与评估服务
       </span>
     </div>
-    <div calss="MR w-screen flex absolute items-center justify-center">
+    <div class="MR w-screen flex flex-col absolute items-center justify-center">
       <MassiveResources></MassiveResources>
     </div>
-    <div calss="KP flex absolute items-center justify-center">
+    <div class="KP w-screen flex absolute items-center justify-center">
       <KnowledgePresentation></KnowledgePresentation>
     </div>
-    <div calss="FD flex absolute items-center justify-center">
+    <div class="FD w-screen flex absolute items-center justify-center">
       <FeatureDisplay></FeatureDisplay>
     </div>
     <footer class="footer w-screen p-6 flex flex-col items-center space-y-4">
@@ -204,12 +204,16 @@ export default {
   color: #444444;
 }
 .MR {
-  width: 100vw;
+  margin-top: 1182px;
   background: #FAFAFC;
 }
 .KP {
-  width: 100vw;
+  margin-top: 2182px;
   background: #FAFAFC;
+}
+.FD {
+  margin-top: 3182px;
+  background: linear-gradient(71deg, #F5F6FA 0%, #FFFBFB 90%);
 }
 .max-w-1280 { 
   max-width: 1280px;
@@ -220,7 +224,7 @@ export default {
   z-index: 1;
 }
 .footer {
-  top: 1182px;
+  top: 4182px;
   position: relative;
 
   background-color: gainsboro;

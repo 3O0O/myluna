@@ -60,14 +60,14 @@ export default {
 /* 海量资源部分 */
 .massive-rescources {
   position: relative;
-  top: 1182px;
-  width: 100%;
+  width: 1440px;
   height: 1000px;
   opacity: 1;
   
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; 
+  align-items: flex-start;
   padding: 200px 80px;
   gap: 32px;
     
@@ -76,8 +76,6 @@ export default {
 }
 .container-23 {
   position: static;
-  left: 80px;
-  top: 200px;
   width: 390px;
   height: 48px;
   opacity: 1;
@@ -86,14 +84,13 @@ export default {
   flex-direction: row;
   padding: 8px;
   gap: 40px;
+  justify-content: flex-start;
+  text-align: left;
   
   border: none;
   z-index: 0;
 }
 .text-btn {
-  position: static;
-  left: 284px;
-  top: 8px;
   width: 98px;
   height: 32px;
   opacity: 1;
@@ -114,9 +111,6 @@ export default {
   outline: none; /* 移除获得焦点时的默认外边框 */
 }
 .container-16 {
-  position: static;
-  left: 80px;
-  top: 280px;
   width: 1280px;
   height: 520px;
   opacity: 1;
@@ -124,7 +118,7 @@ export default {
   /* 自动布局 */
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start; 
   align-items: center;
   padding: 0px;
   gap: 60px;
@@ -134,9 +128,6 @@ export default {
   z-index: 1;
 }
 .container-17 {
-  position: static;
-  left: 0px;
-  top: 0px;
   width: 610px;
   height: 520px;
   border-radius: 24px;
@@ -157,10 +148,6 @@ export default {
   z-index: 0;
 }
 .chart {
-  /* image */
-  position: static;
-  left: 32px;
-  top: 166px;
   width: 546px;
   height: 254px;
   opacity: 1;
@@ -170,12 +157,6 @@ export default {
   z-index: 1;
 }
 .container-32 {
-  /* 容器 32 */
-
-  /* 自动布局子元素 */
-  position: static;
-  left: 32px;
-  top: 32px;
   width: 546px;
   height: 44px;
   opacity: 1;
@@ -192,12 +173,6 @@ export default {
   z-index: 0;
 }
 .container-31 {
-  /* 容器 31 */
-
-  /* 自动布局子元素 */
-  position: static;
-  left: 422px;
-  top: 0px;
   width: 124px;
   height: 44px;
   border-radius: 12px;
@@ -221,9 +196,6 @@ export default {
   outline: none; /* 移除获得焦点时的默认外边框 */
 }
 .resources-title-1 {
-  position: static;
-  left: 0px;
-  top: 6px;
   width: 412px;
   height: 32px;
   opacity: 1;
@@ -239,9 +211,6 @@ export default {
   z-index: 0;
 }
 .btn {
-  position: static;
-  left: 12px;
-  top: 6px;
   width: 100px;
   height: 32px;
   opacity: 1;
@@ -259,9 +228,6 @@ export default {
   white-space: nowrap;
 }
 .container-21 {
-  position: static;
-  left: 670px;
-  top: 106px;
   width: 610px;
   height: 308px;
   opacity: 1;
@@ -276,9 +242,6 @@ export default {
   z-index: 1;
 }
 .resources-title-2 {
-  position: static;
-  left: 0px;
-  top: 0px;
   width: 414px;
   height: 32px;
   opacity: 1;
@@ -304,9 +267,6 @@ export default {
   color: #000000; 
 }
 .container-25 {
-  position: static;
-  left: 0px;
-  top: 72px;
   width: 610px;
   height: 144px;
   opacity: 1;
@@ -322,12 +282,6 @@ export default {
   z-index: 1;
 }
 .text1 {
-  /* 海量标准化、体系化的教学资源 */
-
-  /* 自动布局子元素 */
-  position: static;
-  left: 0px;
-  top: 0px;
   width: 472px;
   height: 32px;
   opacity: 1;
@@ -343,12 +297,6 @@ export default {
   z-index: 0;
 }
 .text2 {
-  /* 基于高效准确的试题相似度评估算法的高质量资源库 */
-
-  /* 自动布局子元素 */
-  position: static;
-  left: 0px;
-  top: 56px;
   width: 610px;
   height: 32px;
   opacity: 1;
@@ -364,12 +312,6 @@ export default {
   z-index: 1;
 }
 .text3 {
-  /* 智能与个性化的资源录入、查询和管理服务 */
-
-  /* 自动布局子元素 */
-  position: static;
-  left: 0px;
-  top: 112px;
   width: 610px;
   height: 32px;
   opacity: 1;
@@ -385,9 +327,6 @@ export default {
   z-index: 2;
 }
 .container-30 {
-  position: static;
-  left: 0px;
-  top: 256px;
   width: 610px;
   height: 52px;
   opacity: 1;
@@ -402,12 +341,6 @@ export default {
   z-index: 2;
 }
 .container-27 {
-  /* 容器 27 */
-
-  /* 自动布局子元素 */
-  position: static;
-  left: 0px;
-  top: 0px;
   width: 137px;
   height: 52px;
   border-radius: 10px;
@@ -434,12 +367,6 @@ export default {
   outline: none; /* 移除获得焦点时的默认外边框 */
 }
 .container-28 {
-  /* 容器 28 */
-
-  /* 自动布局子元素 */
-  position: static;
-  left: 153px;
-  top: 0px;
   width: 137px;
   height: 52px;
   border-radius: 10px;
@@ -466,12 +393,6 @@ export default {
   outline: none; /* 移除获得焦点时的默认外边框 */
 }
 .container-29 {
-  /* 容器 29 */
-
-  /* 自动布局子元素 */
-  position: static;
-  left: 306px;
-  top: 0px;
   width: 137px;
   height: 52px;
   border-radius: 10px;
@@ -498,13 +419,13 @@ export default {
   outline: none; /* 移除获得焦点时的默认外边框 */
 }
 .logo{
-  position: static;
-  left: 20px;
-  top: 18px;
   width: 16px;
   height: 16px;
   opacity: 1;
     
   z-index: 0;
+}
+.container-16, .container-17, .container-32, .container-31, .container-21, .container-25, .container-30 {
+  margin: auto;
 }
 </style>

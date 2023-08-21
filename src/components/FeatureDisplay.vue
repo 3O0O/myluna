@@ -48,23 +48,20 @@ export default {
 /* 功能展示部分 */
 .feature-display {
   position: relative;
-  left: 0px;
-  top: 1182px;
-  width: 100%;
+  width: 1440px;
   height: 1000px;
   opacity: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  margin: auto;
   padding: 80px;
   gap: 48px;
-  background: linear-gradient(71deg, #F5F6FA 0%, #FFFBFB 90%);
+
 }
 
 .feature-title {
-  position: static;
-  left: 80px;
-  top: 260px;
   width: 414px;
   height: 32px;
   opacity: 1;
@@ -94,9 +91,6 @@ export default {
 }
 
 .container-16 {
-  position: static;
-  left: 80px;
-  top: 340px;
   width: 1296px;
   height: 400px;
   opacity: 1;

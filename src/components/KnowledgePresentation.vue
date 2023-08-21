@@ -55,7 +55,6 @@ export default {
 .knowledge-presentation {
   position: relative;
   width: 100%;
-  top: 1182px;
   height: 1000px;
   opacity: 1;
   display: flex;
@@ -67,9 +66,7 @@ export default {
 }
 
 .container-16 {
-  position: static;
-  left: 80px;
-  top: 180px;
+  margin:auto;
   width: 1280px;
   height: 640px;
   opacity: 1;
